@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import logo from './logo.svg';
 
 import './styles/antd.less';
+import './styles/tailwind.css';
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p className="text-pink-500">Hello Vite + React!</p>
         <p>
           <Button type="primary" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
